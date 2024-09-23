@@ -1,0 +1,42 @@
+{% extends "main_page/layout.html" %}
+
+{% block page_title %} 
+Beranda
+{% endblock page_title %}
+
+{% block slot %}
+<main class="d-flex flex-column justify-content-center align-items-center my-5">
+  <div class="text-center">
+    <hgroup>
+      <h1 class="fw-medium display-3 mb-2">
+        Inventaris Barang <br />
+        Association of Informatics
+      </h1>
+
+      <p class="fs-5 text-black">
+        Peminjaman barang kini lebih mudah dan praktis! <br> Temukan informasi barang yang tersedia dan ajukan peminjaman.
+      </p>
+    </hgroup>
+
+    <div class="splide my-4">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide mx-3">
+            <img src="https://dummyimage.com/400x4:3/000000/ffffff&text=barang+1" alt="">
+          </li>
+          <li class="splide__slide mx-3">
+            <img src="https://dummyimage.com/400x4:3/000000/ffffff&text=barang+2" alt="">
+          </li>
+          <li class="splide__slide mx-3">
+            <img src="https://dummyimage.com/400x4:3/000000/ffffff&text=barang+3" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <p class="mt-2 fs-6">(Barang yang sering dipinjam)</p>
+    </div>
+
+    <a class="btn btn-warning rounded-pill text-capitalize" href="#" role="button" style="letter-spacing: 0.6px">Coba Sekarang <i class="fa-solid fa-arrow-right ms-1"></i></a>
+  </div>
+</main>
+{% endblock slot %}
